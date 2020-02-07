@@ -1,5 +1,10 @@
 $(document).ready(function() {
+	var playButton = document.querySelector(".experience__play");
+	var video = document.querySelector(".experience__video");
 
+	playButton.addEventListener("click", function() {
+		video.style = "z-index: 1";
+	});
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
 		var th = $(this);
